@@ -23,17 +23,17 @@ const VehiclesList = () => {
     return <h2>No vehicles found...</h2>;
   }
 
-  const getVehicleIdFromUrl = (url) => {
+  const getIdFromUrl = (url) => {
     const match = url.match(/\/(\d+)\//);  
     return match ? match[1] : null;  
-  };
+  }; //thanksGPT.
 
   return (
     <header>
       <h1>Vehicles</h1>
       <ul>
         {vehicles.map((vehicle, index) => {
-          const vehicleId = getVehicleIdFromUrl(vehicle.url); 
+          const vehicleId = getIdFromUrl(vehicle.url); 
           return (
             <li key={vehicleId}>
               

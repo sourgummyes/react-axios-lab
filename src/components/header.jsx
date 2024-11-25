@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from './nav.jsx';
 
-function Header() {
+const Header = () => {
   return (
     <header>
       <h1>My Application</h1>
